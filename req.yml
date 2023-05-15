@@ -2,6 +2,7 @@
 channels:
     - conda-forge
 dependencies:
+    - python ==3.9
     - cudatoolkit=11.2.2 
     - cudnn=8.1.0
     - jupyter
@@ -19,6 +20,7 @@ dependencies:
     - flask
     - boto3
     - pip
+
     - pip:
         - tensorflow==2.10.1
         - bayesian-optimization

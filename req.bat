@@ -1,3 +1,3 @@
-mamba env remove -n tensorflow
-mamba env create -n tensorflow -f req.yml
-python -m ipykernel install --user --name tensorflow --display-name "Python 3.11 (tensorflow ENV)"
+mamba env remove -n tf
+mamba env create -f req.yml -n tf
+python -m ipykernel install --user --name tf --display-name "Python 3.9 (tf ENV)"
