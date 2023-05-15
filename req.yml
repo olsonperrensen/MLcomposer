@@ -20,6 +20,8 @@ dependencies:
     - flask
     - boto3
     - pip
+    - seaborn
+    - keras-tuner
 
     - pip:
         - tensorflow==2.10.1
