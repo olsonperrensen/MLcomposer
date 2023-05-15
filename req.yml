@@ -20,7 +20,7 @@ dependencies:
     - boto3
     - pip
     - pip:
-        - tensorflow==2.10
+        - tensorflow==2.10.1
         - bayesian-optimization
         - gym
         - kaggle
