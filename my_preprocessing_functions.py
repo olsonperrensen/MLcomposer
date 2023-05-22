@@ -1,3 +1,30 @@
+import tensorflow as tf
+import shutil
+from zipfile import ZipFile as zf
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+import seaborn as sns
+from sklearn.preprocessing import OrdinalEncoder,StandardScaler
+from sklearn.linear_model import LinearRegression,Ridge
+from sklearn.feature_selection import SelectKBest,chi2,RFE,RFECV
+from sklearn.model_selection import train_test_split,cross_validate,RandomizedSearchCV
+from sklearn.metrics import mean_absolute_error, mean_squared_error
+from sklearn.decomposition import PCA
+from sklearn.neural_network import MLPRegressor
+from sklearn.linear_model import ElasticNet, Lasso
+from sklearn.pipeline import Pipeline
+from sklearn.svm import SVR
+from xgboost import XGBRegressor
+from keras.layers import Dense,Flatten,Dropout
+from keras.models import Sequential
+from keras.optimizers import Adam
+from keras_tuner import HyperParameters,RandomSearch
+# What version of Python do you have?
+import sys
+from keras import __version__
+import pandas as pd
+import sklearn as sk
 '''
 The following two 'detect_outliers' functions have been taken from 'Finding an outlier in a dataset using Python' by Krish Naik. All credit goes to him.
 https://www.youtube.com/embed/rzR_cKnkD18
