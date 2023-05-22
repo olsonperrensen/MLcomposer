@@ -8,7 +8,7 @@ import seaborn as sns
 from sklearn.preprocessing import OrdinalEncoder,StandardScaler
 from sklearn.linear_model import LinearRegression,Ridge
 from sklearn.feature_selection import SelectKBest,chi2,RFE,RFECV
-from sklearn.model_selection import train_test_split,cross_validate,RandomizedSearchCV
+from sklearn.model_selection import train_test_split,cross_validate,GridSearchCV
 from sklearn.metrics import mean_absolute_error, mean_squared_error
 from sklearn.decomposition import PCA
 from sklearn.neural_network import MLPRegressor
